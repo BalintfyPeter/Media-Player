@@ -1,0 +1,28 @@
+﻿<Window x:Class="MediaPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaPlayer"
+        mc:Ignorable="d"
+        Title="Power Metal Player" x:Name="winName" Height="500" Width="800">
+    <Grid>
+        <Image x:Name="imgAlbumCover" HorizontalAlignment="Left" Height="200" Margin="292,54,0,0" VerticalAlignment="Top" Width="200"/>
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="760,111,0,0" VerticalAlignment="Top" Width="20" Orientation="Vertical" Height="250"/>
+
+        <Button x:Name="btnPlay" Content="Play" HorizontalAlignment="Center" Margin="0,419,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+        <Button x:Name="btnNext" Content="Next Song" HorizontalAlignment="Left" Margin="490,419,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+        <Button x:Name="btnPrevious" Content="Previous Song" HorizontalAlignment="Left" Margin="213,419,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+
+        <Label x:Name="lbTrackName" Content="Track Name" HorizontalAlignment="Center" Margin="0,263,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbAlbumName" Content="Album Name" HorizontalAlignment="Center" Margin="0,294,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.706,-0.5"/>
+
+        <ComboBox x:Name="cbFile" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120">
+            <Button x:Name="btnSave" Content="Save"></Button>
+            <Button x:Name="btnLoad" Content="Load"></Button>
+            <Button x:Name="btnAddtoP" Content="Add to Playlist"></Button>
+            <Button x:Name="btnRemoveFromP" Content="Remove From Playlist"></Button>
+            <Button x:Name="btnExit" Content="Exit"></Button>
+        </ComboBox>
+    </Grid>
+</Window>
